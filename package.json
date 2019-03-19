@@ -1,0 +1,49 @@
+{
+  "name": "rgrjs",
+  "version": "1.0.0",
+  "description": "React Application with GraphQL and Relay",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "./node_modules/.bin/babel-node --presets @babel/react,@babel/env src/server.js",
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeplus254/rgrjs.git"
+  },
+  "keywords": [
+    "React",
+    "GraphQL",
+    "Relay"
+  ],
+  "author": "Ronny Mageh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeplus254/rgrjs/issues"
+  },
+  "homepage": "https://github.com/codeplus254/rgrjs#readme",
+  "dependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "kerberos": "^1.1.2",
+    "mongodb": "^3.1.13",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "dotenv": "^7.0.0",
+    "nodemon": "^1.18.10",
+    "webpack-cli": "^3.3.0"
+  }
+}
